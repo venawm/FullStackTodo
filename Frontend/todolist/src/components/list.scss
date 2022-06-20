@@ -1,0 +1,38 @@
+.main{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.list{
+    padding: 0.5rem;
+    display: flex;
+    border-radius: 1rem;
+    width: 50vw;
+    min-height: 15vh;
+    // background-color: #FD6E41;
+    background-image: linear-gradient(to right, rgb(255, 62, 62), #ff5b29);
+    align-items: center;
+    justify-content: space-between;
+}
+.edit{
+    input{
+        width: 1rem;
+    }
+}
+.delete{
+    height: 2rem;
+    width: 2rem;
+    border-radius: 10rem;
+    border: 0.1px solid rgb(0, 0, 0);
+    background-image: linear-gradient(to right, rgb(255, 62, 62), #ff5b29);
+    
+    &:hover{
+        cursor: pointer;
+    }
+    img{
+        width: 1.5rem;
+    }
+}
+

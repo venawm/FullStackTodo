@@ -1,9 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,900&family=Roboto:ital,wght@1,900&display=swap');
 .input{
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 5rem;
     text-align: center;
+    .inputComponents{
+        h1{
+            font-family: 'Lato', sans-serif;
+            font-family: 'Roboto', sans-serif;
+        }
+    }
     form{
         margin-top: 3rem;
     .inputFeild{
