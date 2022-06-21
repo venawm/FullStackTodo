@@ -8,6 +8,7 @@ import './app.scss'
 function App() {
   const [todoList,setTodoList] = useState([])
   
+  
 const fetcher =async()=>{
   const list = await axios.get('http://localhost:5000/todos')
   const array = list.data
@@ -28,7 +29,7 @@ useEffect(()=>{
       <Input></Input>
       {todoList.map(e=>{
         const tree = e
-        return <List todoList={tree}></List>
+        return <List todoList={tree} todo={todoList} setTodo={setTodoList}></List>
       })}
     
       
