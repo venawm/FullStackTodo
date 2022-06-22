@@ -6,7 +6,8 @@ import './list.scss'
 function List(tree){
     const[modalOpen,setModalOpen] = useState(false)
     
-    console.log(tree)
+    const id = tree.todoList.t_id
+    console.log(id)
     
    
     function deleteTodo(e){
@@ -30,7 +31,7 @@ function List(tree){
     
     return (
     <div className="main">
-       {modalOpen&& <Modal closeModal={setModalOpen}/>}
+       {modalOpen&& <Modal id={id} closeModal={setModalOpen}/>}
        <div>
             <div className='list'>
                 <h1>{tree.todoList.description}</h1>

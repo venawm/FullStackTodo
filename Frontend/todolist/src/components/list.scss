@@ -11,16 +11,14 @@
     border-radius: 1rem;
     width: 50vw;
     min-height: 15vh;
+    color: white;
+
     // background-color: #FD6E41;
     background-image: linear-gradient(to right, rgb(255, 62, 62), #ff5b29);
     align-items: center;
     justify-content: space-between;
 }
-.edit{
-    input{
-        width: 1rem;
-    }
-}
+
 .delete{
     height: 2rem;
     width: 2rem;

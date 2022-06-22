@@ -1,9 +1,61 @@
 
     .modal{
-        height: 30rem;
+        height: 25rem;
         width: 45rem;
-        background-color: rgb(182, 182, 182);
+        background-color: rgb(255, 255, 255);
         position: fixed;
         top: 30%;
-    }
+       form{
+        margin-top: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 10rem;
+        border: 0.2px solid rgba(0, 0, 0, 0.185);
 
+
+        input{
+            width: 40rem;
+            height: 5rem;
+        }
+        
+       }
+
+        .button{
+            display: flex;
+            justify-content: flex-end;
+            button{
+                font-size: 100%;
+                width: 2rem;
+                height: 2rem;
+                border: none;
+                color: white;
+                background-color: red;
+            }
+        }
+    }
+    .button{
+        display: flex;
+        .submit{
+            margin-top: 1rem;
+           
+            margin-right: 0.3rem;
+            width: 6rem !important;
+            height: 3rem !important;
+            border-radius: 25px; 
+            background-color: #3dab1a !important;    
+        }
+        .cancle{
+            margin-top: 1rem;
+          
+            width: 6rem !important;
+            height: 3rem !important;   
+            border-radius: 25px;  
+            background-color: red !important;
+    
+        }
+    
+    
+
+    }
+    
