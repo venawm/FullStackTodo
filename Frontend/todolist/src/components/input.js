@@ -5,6 +5,7 @@ import './input.scss'
 function Input(){
     const[description,setDescription] = useState('')
     const formHandler = async (e)=>{
+        if(description!=''){
         try {
             const body = {description}
             const response  =axios.post('http://localhost:5000/todos',{description})
@@ -12,6 +13,9 @@ function Input(){
             
         } catch (error) {
             
+        }}
+        else{
+            alert('Error enter a valid value')
         }
 
     }

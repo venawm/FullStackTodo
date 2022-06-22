@@ -9,13 +9,9 @@ const routes = require('./routes/todos.router')
 app.use(cors());
 app.use(express.json());
 
-
-
 app.listen(PORT,()=>{
     console.log(`Server has started on port  ${PORT}`)
 })
 
-
-/
-// Get all todos 
+// Routes
 app.use(routes)

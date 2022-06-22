@@ -17,28 +17,29 @@ function Modal({closeModal,id}){
 
     console.log(id)
     return (
-        
-            <div className='modal'>
-                <div className="button"><button onClick={()=>{
-                    closeModal(false)
-                }}>X</button></div>
-                
-                <h1>Edit Todo</h1>
-                <form action="" onSubmit={submitHandler} className="edit">
-                    <div className="text">
-                        <input type="text"  value={description} onChange={(e)=>{
-                            setEdit(e.target.value)
-                        }} />
-                    </div>
-                   
-                </form>
-                <div className="button hell">
-                        <button onClick={submitHandler} className='submit'>Edit</button>
-                        <button className='cancle'  onClick={()=>{
-                    closeModal(false)
-                }}>Cancle</button>
-                    </div>
-                
+        <div className="modalwrapper">
+                <div className='modal'>
+                    <div className="button"><button onClick={()=>{
+                        closeModal(false)
+                    }}>X</button></div>
+                    
+                    <h1>Edit Todo</h1>
+                    <form action="" onSubmit={submitHandler} className="edit">
+                        <div className="text">
+                            <input type="text"  value={description} onChange={(e)=>{
+                                setEdit(e.target.value)
+                            }} />
+                        </div>
+                    
+                    </form>
+                    <div className="button hell">
+                            <button onClick={submitHandler} className='submit'>Edit</button>
+                            <button className='cancle'  onClick={()=>{
+                        closeModal(false)
+                    }}>Cancle</button>
+                        </div>
+                    
+                </div>
             </div>
     );
 };
