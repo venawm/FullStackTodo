@@ -5,10 +5,20 @@ import './input.scss'
 function Input(){
     const[description,setDescription] = useState('')
     const formHandler = async (e)=>{
-        if(description!=''){
+        if(description!==''){
         try {
-            const body = {description}
-            const response  =axios.post('http://localhost:5000/todos',{description})
+  
+            const response  =fetch('http://localhost:5000/todos', {
+                method: 'POST',
+                headers: {
+                  'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ description })
+              })
+                .then(response => response.json())
+                .then(data => console.log(data))
+                .catch(error => console.error(error))
+              
             console.log(response)
             
         } catch (error) {
@@ -17,7 +27,8 @@ function Input(){
         else{
             alert('Error enter a valid value')
         }
-
+        console.log(description)
+        e.preventDefault();
     }
 
     return (

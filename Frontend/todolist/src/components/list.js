@@ -37,7 +37,7 @@ function List(tree){
                 <h1>{tree.todoList.description}</h1>
                 <div className="protect">
                     
-                    <input  onClick={editTodo} type='image' src='https://www.svgrepo.com/show/130377/pencil.svg'/>
+                    <input  onClick={editTodo} width={'40px'} type='image' src='https://www.svgrepo.com/show/130377/pencil.svg'/>
                     <button  className='delete' onClick={deleteTodo}><img src="https://freesvg.org/img/trash.png" alt="" /></button>
 
                 </div>

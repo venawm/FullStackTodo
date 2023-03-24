@@ -15,9 +15,9 @@ const fetcher =async()=>{
   console.log(array)
   await setTodoList(array)
 }
-todoList.map(e=>{
+todoList.map(e=>(
   console.log(e)
-})
+))
 useEffect(()=>{
   fetcher()
 }, [])
